@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1ce3ec8993.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    
+    <nav>
+        <div class="logo">
+            <a href="#">Sahasawas W.</a>
+        </div>
+        
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="banner">
+        <img src="img/316A8020.jpg" alt="">
+        <div class="banner-info">
+            <h1>Hi! I'm Nuz<br>
+            Nice to meet you.</h1>
+        </div>
+    </section>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/IMG_20231021_221958_689.jpg" >
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Nuz, an 18-year-old Computer Engineering student at KMUTT. My passion for technology drives my academic pursuits, while music serves as my creative escape. Whether it's strumming my guitar, playing the bass, or experimenting with digital music, music is my sanctuary for self-expression. I find inspiration in the synergy of technology and music, shaping my unique perspective and sparking innovation. I'm excited for the journey ahead, balancing my academic goals with my love for music.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                            <p class="tab-links"onclick="opentab('hobbies')">Hobbies</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Musical</span><br>Skilled Bassist and Guitarist</li>
+                                <li><span>Coding</span><br>Standard game and website development</li>
+                                <li><span>Creative</span><br>Intermediate Video editing and drawing</li>
+                                <li><span>Sport</span><br>Standard Badminton and Goal keeper</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents"id="education">
+                            <ul>
+                                <li><span>Primary</span><br>Sarasas Wited Bangbon School</li>
+                                <li><span>Junior</span><br>Suankularb Wittayalai Thonburi</li>
+                                <li><span>Senior</span><br>Suankularb Wittayalai Thonburi (Sci-Math)</li>
+                                <li><span>Current</span><br>KMUTT: CPE international Program</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents"id="hobbies">
+                            <ul>
+                                <li><span>Playing music</span><br>A bassist of the Mixture band, Love to play metal song.</li>
+                                <li><span>Gaming</span><br>Enjoy playing games especially with friends.</li>
+                                <li><span>Working out</span><br>Hit the gym about 4-5days a week.</li>
+
+                            </ul>
+                        </div>
+
+                        
+
+                        
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Contact">
+        <div class="contact">
+            <div class="contact-info">
+                <div class="card">
+                    <li><a href="#"><i class="card-icon far fa-envelope"></a></i></li>
+                    <p>iambonus2548@gmail.com</p>
+                </div>
+
+                <div class="card">
+                    <i class="card-icon fas fa-phone"></i>
+                    <p>091-781-8515</p>
+                </div>
+
+                <div class="card">
+                    <li><a href="https://www.facebook.com/NusWiwat"><i class="card-icon fa-brands fa-facebook"></a></i></li>
+                    <p>สหัสวรรษ วิวัฒน์ธนมงคล</p>
+                </div>
+
+                <div class="card">
+                    <li><a href="https://www.instagram.com/mynameiz_nuz/"><i class="card-icon fa-brands fa-instagram"></a></i></li>
+                    <p>mynameiz_nuz</p>
+                </div>
+
+                
+            </div>
+    
+        </div>
+
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+             event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
+
+ 
+    
+</body>
+</html>
